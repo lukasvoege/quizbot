@@ -1,0 +1,14 @@
+Q: Das Xiphoid ist das untere Ende des Brustbeins. Unter welchem Namen ist es besser bekannt?
+A: ["schwertfortsatz", "wurmfortsatz", "kapillar", "pupille"] - A
+
+Q: In welcher Stadt befindet man sich, wenn man sich im 'Djurgarden" aufhält?
+A: ["oslo", "stockholm", "kopenhagen", "helsinki"] - B
+
+Q: Wann erhielt Adolf von Baeyer den Nobelpreis für Chemie?
+A: ["1905", "1990", "1934", "1876"] - A
+
+Q: Wofür steht das Anch-Symbol (Henkelkreuz) im altägyptischen Glauben?
+A: ["wahrheit", "glück", "sonne", "leben"] - D
+
+Q: Wer oder was ist Baba-Jaga?
+A: ["orthodoxe wetterfee", "hexenartige märchenfigur", "finnisches orakel", "irischer naturgeist"] - C
