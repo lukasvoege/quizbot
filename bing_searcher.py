@@ -18,6 +18,26 @@ def getSearchResults(question, mkt = "de-DE", promote = "Webpages", answerCount 
 
     return search_results['webPages']['value']
 
+def getKeyPhrases(question):
+    subscription_key = "40c678adf7bf4ba5a47a84fc1124914d"
+    assert subscription_key
+
+    url = "https://quiztextana.cognitiveservices.azure.com/text/analytics/v3.1/keyPhrases"
+
+    headers = {"Ocp-Apim-Subscription-Key": subscription_key, "Content-Type": "application/json"}
+    body = {"documents": [{ 
+        "id": "1",
+        "language":"de",
+        "text": question
+    }]}
+
+    response = requests.post(url, headers=headers, json=body)
+    response.raise_for_status()
+    search_results = response.json()
+
+    print(search_results['documents'][0]['keyPhrases'])
+
+
 ### MULTI THREADING here
 def loadPageAndCount(url, answerHits):
     #print(url)
@@ -25,7 +45,7 @@ def loadPageAndCount(url, answerHits):
     try:
         resp = requests.get(url, headers=headers, timeout=2)
         if resp.status_code == 200:
-            #print("Page loaded")
+            print("Page loaded")
             soup = BeautifulSoup(resp.content, "html.parser")
             for data in soup(['style', 'script']):
                 data.decompose()
@@ -34,19 +54,18 @@ def loadPageAndCount(url, answerHits):
             for option in answerHits.keys():
                 answerHits[option] = answerHits.get(option, 0) + webtext.count(option)
         else:
-            #print(f"Cannot load Webpage, skip. Code: {resp.status_code}")
-            pass
+            print(f"Cannot load Webpage, skip. Code: {resp.status_code}")
+            
     except requests.exceptions.ReadTimeout:
-        #print('Connection timed out, skip.')
-        pass
+        print('Connection timed out, skip.')
+        
     except requests.exceptions.ConnectionError:
-        pass
-        #print('Connection Error, skip.')
+        print('Connection Error, skip.')
 
     return answerHits
 
 def printOutput(answerHits):
-    os.system('cls')
+    #os.system('cls')
     strings = [f'{option}\t{"#" * hits}' for option, hits in answerHits.items()]
     print('\n'.join(strings))
 
@@ -58,18 +77,20 @@ def assesAnswers(pages, answers):
     for page in pages:
         for option in answers:
             answerHits[option] = answerHits.get(option, 0) + page['snippet'].lower().count(option)
-    printOutput(answerHits)
+    print(answerHits)
     
     # Crawl Result Webpages for answers
     for page in pages:
         answerHits = loadPageAndCount(page['url'], answerHits)
-        printOutput(answerHits)
+        #printOutput(answerHits)
             
     return answerHits
 
 
-pages = getSearchResults("Wer oder was ist Baba-Jaga?")
+#pages = getSearchResults("Welches Comicmagazin 70ern Serien Lucky Luke Prinz Eisenherz Michel Vaillant Deutschland")
 
-options = assesAnswers(pages, ["orthodoxe wetterfee", "hexenartige märchenfigur", "finnisches orakel", "irischer naturgeist"])
+#options = assesAnswers(pages, ["zack", "päng", "flatsch", "boing"])
 
-print(options)
+#print(options)
+
+getKeyPhrases("Wie heißt die jüdische Königin, die ihr Volk durch ihre selbstlosen Handlungen vor der sicheren Zerstörung rettete?")

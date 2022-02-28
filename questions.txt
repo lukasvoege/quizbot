@@ -12,3 +12,30 @@ A: ["wahrheit", "glück", "sonne", "leben"] - D
 
 Q: Wer oder was ist Baba-Jaga?
 A: ["orthodoxe wetterfee", "hexenartige märchenfigur", "finnisches orakel", "irischer naturgeist"] - C
+
+Q: Wie groß ist eine handelsübliche Europalette?
+A: ["120 x 80 cm", "110 x 90 cm", "120 x 90 cm", "110 x 80 cm"] - A
+
+Q: Welche US-amerikanische Stadt ist für ihre Cable Cars bekannt?
+A: ["los angeles", "boston", "chicago", "san francisco"] - D
+
+Q: Wie heißt die jüdische Königin, die ihr Volk durch ihre selbstlosen Handlungen vor der sicheren Zerstörung rettete?
+A: ["ester", "hannah", "ruth", "mirjam"] - A
+
+Q: Zu welchem Land gehört Grönland?
+A: ["dänemark", "norwegen", "kanada", "usa"] - A
+
+Q: Durch welches Land zieht sich die biogeografische Wallace-Linie?
+A: ["indonesien", "trinidad und tobago", "papua-neuguinea", "kanada"] - A
+
+Q: Welche dieser Londoner Straßen ist für ihre vielen historischen Herrenausstatter bekannt?
+A: ["savile row", "downing street", "abbey road", "baker street"] - A
+
+Q: Welches Comicmagazin machte in den 70ern u.a. Serien wie Lucky Luke, Prinz Eisenherz und Michel Vaillant in Deutschland populär?
+A: ["zack", "päng", "flatsch", "boing"] - A
+
+Q: Was ist Lithographie?
+A: ["steindruck", "holzdruck", "buchdruck", "linoleumdruck"] - A
+
+Q: Welche Stunde schlägt es um 12 Uhr mittags im Kloster?
+A: ["sext", "terz", "non", "komplet"] - A
