@@ -1,0 +1,124 @@
+{
+    "language": "de",
+    "textAngle": 0.0,
+    "orientation": "Up",
+    "regions": [{
+        "boundingBox": "127,59,144,347",
+        "lines": [{
+            "boundingBox": "127,59,130,38",
+            "words": [{
+                "boundingBox": "127,59,130,38",
+                "text": "12:45"
+            }]
+        }, {
+            "boundingBox": "179,380,92,26",
+            "words": [{
+                "boundingBox": "179,380,92,26",
+                "text": "Ritter."
+            }]
+        }]
+    }, {
+        "boundingBox": "424,380,610,187",
+        "lines": [{
+            "boundingBox": "854,380,180,33",
+            "words": [{
+                "boundingBox": "854,380,180,33",
+                "text": "chrisknappi"
+            }]
+        }, {
+            "boundingBox": "424,535,324,32",
+            "words": [{
+                "boundingBox": "424,535,93,32",
+                "text": "Rund"
+            }, {
+                "boundingBox": "530,544,55,23",
+                "text": "um"
+            }, {
+                "boundingBox": "599,535,54,32",
+                "text": "die"
+            }, {
+                "boundingBox": "665,535,83,32",
+                "text": "Welt"
+            }]
+        }]
+    }, {
+        "boundingBox": "182,803,808,201",
+        "lines": [{
+            "boundingBox": "182,803,808,46",
+            "words": [{
+                "boundingBox": "182,806,44,43",
+                "text": "In"
+            }, {
+                "boundingBox": "245,803,212,46",
+                "text": "welcher"
+            }, {
+                "boundingBox": "475,803,142,46",
+                "text": "Stadt"
+            }, {
+                "boundingBox": "636,803,222,46",
+                "text": "befindet"
+            }, {
+                "boundingBox": "877,816,113,33",
+                "text": "man"
+            }]
+        }, {
+            "boundingBox": "270,874,629,56",
+            "words": [{
+                "boundingBox": "270,874,122,56",
+                "text": "sich,"
+            }, {
+                "boundingBox": "412,887,141,33",
+                "text": "wenn"
+            }, {
+                "boundingBox": "575,887,112,33",
+                "text": "man"
+            }, {
+                "boundingBox": "707,874,108,46",
+                "text": "sich"
+            }, {
+                "boundingBox": "837,875,62,45",
+                "text": "im"
+            }]
+        }, {
+            "boundingBox": "298,943,573,61",
+            "words": [{
+                "boundingBox": "298,943,337,61",
+                "text": ""Djurgården""
+            }, {
+                "boundingBox": "654,945,217,47",
+                "text": "aufhält?"
+            }]
+        }]
+    }, {
+        "boundingBox": "158,1550,300,408",
+        "lines": [{
+            "boundingBox": "251,1550,106,42",
+            "words": [{
+                "boundingBox": "251,1550,106,42",
+                "text": "Oslo"
+            }]
+        }, {
+            "boundingBox": "158,1906,300,52",
+            "words": [{
+                "boundingBox": "158,1906,300,52",
+                "text": "Kopenhagen"
+            }]
+        }]
+    }, {
+        "boundingBox": "733,1550,257,397",
+        "lines": [{
+            "boundingBox": "733,1550,257,42",
+            "words": [{
+                "boundingBox": "733,1550,257,42",
+                "text": "Stockholm"
+            }]
+        }, {
+            "boundingBox": "766,1906,192,41",
+            "words": [{
+                "boundingBox": "766,1906,192,41",
+                "text": "Helsinki"
+            }]
+        }]
+    }],
+    "modelVersion": "2021-04-01"
+}
