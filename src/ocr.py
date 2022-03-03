@@ -18,4 +18,4 @@ def getOcrText(image_path):
     return search_results
 
 
-print(getOcrText('./test_images/IMG_4232.PNG'))
+print(getOcrText('capture.jpg'))
