@@ -7,7 +7,7 @@ import json
 with open('results.json', 'r') as f:
   data = json.load(f)
 
-im = Image.open('IMG_4231.PNG')
+im = Image.open('capture.jpg')
 
 # Display the image
 plt.imshow(im)

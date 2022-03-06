@@ -1,122 +1,110 @@
 {
     "language": "de",
-    "textAngle": 0.0,
+    "textAngle": -0.05235987755982924,
     "orientation": "Up",
     "regions": [{
-        "boundingBox": "127,59,144,347",
+        "boundingBox": "6,17,125,147",
         "lines": [{
-            "boundingBox": "127,59,130,38",
+            "boundingBox": "6,17,125,18",
             "words": [{
-                "boundingBox": "127,59,130,38",
-                "text": "12:45"
+                "boundingBox": "6,20,66,15",
+                "text": "MEMU"
+            }, {
+                "boundingBox": "78,17,53,14",
+                "text": "PL.t»Y"
             }]
         }, {
-            "boundingBox": "179,380,92,26",
+            "boundingBox": "64,151,44,13",
             "words": [{
-                "boundingBox": "179,380,92,26",
+                "boundingBox": "64,151,44,13",
                 "text": "Ritter."
             }]
         }]
     }, {
-        "boundingBox": "424,380,610,187",
+        "boundingBox": "375,133,78,15",
         "lines": [{
-            "boundingBox": "854,380,180,33",
+            "boundingBox": "375,133,78,15",
             "words": [{
-                "boundingBox": "854,380,180,33",
-                "text": "chrisknappi"
-            }]
-        }, {
-            "boundingBox": "424,535,324,32",
-            "words": [{
-                "boundingBox": "424,535,93,32",
-                "text": "Rund"
-            }, {
-                "boundingBox": "530,544,55,23",
-                "text": "um"
-            }, {
-                "boundingBox": "599,535,54,32",
-                "text": "die"
-            }, {
-                "boundingBox": "665,535,83,32",
-                "text": "Welt"
+                "boundingBox": "375,133,78,15",
+                "text": "laurahrtmn"
             }]
         }]
     }, {
-        "boundingBox": "182,803,808,201",
+        "boundingBox": "92,214,337,160",
         "lines": [{
-            "boundingBox": "182,803,808,46",
+            "boundingBox": "207,214,28,15",
             "words": [{
-                "boundingBox": "182,806,44,43",
-                "text": "In"
-            }, {
-                "boundingBox": "245,803,212,46",
-                "text": "welcher"
-            }, {
-                "boundingBox": "475,803,142,46",
-                "text": "Stadt"
-            }, {
-                "boundingBox": "636,803,222,46",
-                "text": "befindet"
-            }, {
-                "boundingBox": "877,816,113,33",
-                "text": "man"
+                "boundingBox": "207,214,28,15",
+                "text": "Die"
             }]
         }, {
-            "boundingBox": "270,874,629,56",
+            "boundingBox": "92,336,337,38",
             "words": [{
-                "boundingBox": "270,874,122,56",
-                "text": "sich,"
+                "boundingBox": "92,353,49,21",
+                "text": "Wer"
             }, {
-                "boundingBox": "412,887,141,33",
-                "text": "wenn"
+                "boundingBox": "149,349,55,22",
+                "text": "oder"
             }, {
-                "boundingBox": "575,887,112,33",
-                "text": "man"
+                "boundingBox": "212,350,48,18",
+                "text": "was"
             }, {
-                "boundingBox": "707,874,108,46",
-                "text": "sich"
+                "boundingBox": "268,344,31,21",
+                "text": "ist"
             }, {
-                "boundingBox": "837,875,62,45",
-                "text": "im"
-            }]
-        }, {
-            "boundingBox": "298,943,573,61",
-            "words": [{
-                "boundingBox": "298,943,337,61",
-                "text": "Djurgården"
-            }, {
-                "boundingBox": "654,945,217,47",
-                "text": "aufhält?"
+                "boundingBox": "305,336,124,26",
+                "text": "Chakall?"
             }]
         }]
     }, {
-        "boundingBox": "158,1550,300,408",
+        "boundingBox": "47,597,197,195",
         "lines": [{
-            "boundingBox": "251,1550,106,42",
+            "boundingBox": "47,597,197,29",
             "words": [{
-                "boundingBox": "251,1550,106,42",
-                "text": "Oslo"
+                "boundingBox": "47,603,120,23",
+                "text": "Berühmtes"
+            }, {
+                "boundingBox": "174,599,44,20",
+                "text": "Tier"
+            }, {
+                "boundingBox": "225,597,19,19",
+                "text": "in"
             }]
         }, {
-            "boundingBox": "158,1906,300,52",
+            "boundingBox": "89,630,117,22",
             "words": [{
-                "boundingBox": "158,1906,300,52",
-                "text": "Kopenhagen"
+                "boundingBox": "89,633,67,19",
+                "text": "einem"
+            }, {
+                "boundingBox": "163,630,43,19",
+                "text": "Zoo"
+            }]
+        }, {
+            "boundingBox": "73,739,164,29",
+            "words": [{
+                "boundingBox": "73,739,164,29",
+                "text": "Argentinischer"
+            }]
+        }, {
+            "boundingBox": "107,768,98,24",
+            "words": [{
+                "boundingBox": "107,768,98,24",
+                "text": "Starkoch"
             }]
         }]
     }, {
-        "boundingBox": "733,1550,257,397",
+        "boundingBox": "336,600,131,165",
         "lines": [{
-            "boundingBox": "733,1550,257,42",
+            "boundingBox": "336,600,131,25",
             "words": [{
-                "boundingBox": "733,1550,257,42",
-                "text": "Stockholm"
+                "boundingBox": "336,600,131,25",
+                "text": "Promi-Baby"
             }]
         }, {
-            "boundingBox": "766,1906,192,41",
+            "boundingBox": "351,743,116,22",
             "words": [{
-                "boundingBox": "766,1906,192,41",
-                "text": "Helsinki"
+                "boundingBox": "351,743,116,22",
+                "text": "Moderator"
             }]
         }]
     }],

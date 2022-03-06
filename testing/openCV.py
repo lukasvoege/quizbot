@@ -19,7 +19,7 @@ print(cap.get(15))
 
 cap.set(3,1280)
 cap.set(4,1024)
-cap.set(15, -8)
+cap.set(15, -7)
 
 print(cap.get(3))
 print(cap.get(4))
