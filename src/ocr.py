@@ -7,7 +7,8 @@ def getOcrText(image_path):
 
     search_url = "https://quizvision.cognitiveservices.azure.com/vision/v3.2/ocr"
 
-    image_data = open(image_path, "rb").read()
+    #image_data = open(image_path, "rb").read()
+    image_data = image_path
 
     headers = {"Ocp-Apim-Subscription-Key": subscription_key, "Content-Type": "application/octet-stream"}
     params = {"language": "de"}
@@ -53,4 +54,4 @@ def getQuestionAndAnswers(ocr_result, img_width, img_height):
 
     return question
 
-print(getQuestionAndAnswers(getOcrText('capture.jpg'), 535, 983))
+#print(getQuestionAndAnswers(getOcrText('capture.jpg'), 535, 983))

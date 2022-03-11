@@ -36,6 +36,7 @@ def getKeyPhrases(question):
     search_results = response.json()
 
     print(search_results['documents'][0]['keyPhrases'])
+    return " ".join(search_results['documents'][0]['keyPhrases'])
 
 
 ### MULTI THREADING here
@@ -87,10 +88,11 @@ def assesAnswers(pages, answers):
     return answerHits
 
 
-#pages = getSearchResults("Welches Comicmagazin 70ern Serien Lucky Luke Prinz Eisenherz Michel Vaillant Deutschland")
+#pages = getSearchResults('Welche Art von Tier ist ein "Ungarisches Nackthals"?')
+#print(pages)
 
-#options = assesAnswers(pages, ["zack", "päng", "flatsch", "boing"])
+#options = assesAnswers(pages, ["frosch", "insekt", "marder", "vogel"])
 
 #print(options)
 
-getKeyPhrases("Wie heißt die jüdische Königin, die ihr Volk durch ihre selbstlosen Handlungen vor der sicheren Zerstörung rettete?")
+#getKeyPhrases("Wie heißt die jüdische Königin, die ihr Volk durch ihre selbstlosen Handlungen vor der sicheren Zerstörung rettete?")
