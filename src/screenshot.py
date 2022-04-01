@@ -1,5 +1,6 @@
 from PIL import ImageGrab
 import win32gui
+import time 
 
 def screenshot():
     toplist, winlist = [], []
@@ -12,10 +13,11 @@ def screenshot():
     hwnd = windowlist[-1][0]
 
     win32gui.SetForegroundWindow(hwnd)
+    time.sleep(0.5)
     bbox = win32gui.GetWindowRect(hwnd)
     img = ImageGrab.grab(bbox)
     width, height = img.size
-    img.save('capture.jpg')
+    #img.save('capture.jpg')
 
     print(bbox)
     print(f'width: {width} - height: {height}')

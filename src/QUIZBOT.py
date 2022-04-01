@@ -11,6 +11,9 @@ img.save(img_bytes, "png")
 question = ocr.getQuestionAndAnswers(ocr.getOcrText(img_bytes.getvalue()), img.width, img.height)
 print(question)
 
+with open('allQuestions.txt', 'a', encoding='utf-8') as f:
+    f.write(str(question) + '\n')
+
 if len(question['Q'].split(" ")) > 9: 
     search_query = bs.getKeyPhrases(question['Q'])
 else:

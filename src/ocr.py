@@ -1,8 +1,11 @@
 import requests
 import os
+from configparser import ConfigParser
 
 def getOcrText(image_path):
-    subscription_key = "584a787eed124115a9636d747172af7f"
+    conf = ConfigParser()
+    conf.read('../config.ini')
+    subscription_key = conf['environ']['ocr_key']
     assert subscription_key
 
     search_url = "https://quizvision.cognitiveservices.azure.com/vision/v3.2/ocr"

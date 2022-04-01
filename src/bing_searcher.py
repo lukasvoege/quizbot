@@ -1,9 +1,13 @@
 import requests
 from bs4 import BeautifulSoup
-import os
+from threading import Thread
+import time
+from configparser import ConfigParser
 
 def getSearchResults(question, mkt = "de-DE", promote = "Webpages", answerCount = 1):
-    subscription_key = "eddcaabfa56c47ef83327f98f8207ace"
+    conf = ConfigParser()
+    conf.read('../config.ini')
+    subscription_key = conf['environ']['bing_key']
     assert subscription_key
 
     search_url = "https://api.bing.microsoft.com/v7.0/search"
@@ -19,7 +23,9 @@ def getSearchResults(question, mkt = "de-DE", promote = "Webpages", answerCount 
     return search_results['webPages']['value']
 
 def getKeyPhrases(question):
-    subscription_key = "40c678adf7bf4ba5a47a84fc1124914d"
+    conf = ConfigParser()
+    conf.read('../config.ini')
+    subscription_key = conf['environ']['keyphrases_key']
     assert subscription_key
 
     url = "https://quiztextana.cognitiveservices.azure.com/text/analytics/v3.1/keyPhrases"
@@ -35,18 +41,17 @@ def getKeyPhrases(question):
     response.raise_for_status()
     search_results = response.json()
 
-    print(search_results['documents'][0]['keyPhrases'])
+    #print(search_results['documents'][0]['keyPhrases'])
     return " ".join(search_results['documents'][0]['keyPhrases'])
 
 
-### MULTI THREADING here
-def loadPageAndCount(url, answerHits):
+def loadPageAndCount(url, answerHits, verbose=False):
     #print(url)
     headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
     try:
         resp = requests.get(url, headers=headers, timeout=2)
         if resp.status_code == 200:
-            print("Page loaded")
+            if verbose: print("Page loaded")
             soup = BeautifulSoup(resp.content, "html.parser")
             for data in soup(['style', 'script']):
                 data.decompose()
@@ -55,14 +60,15 @@ def loadPageAndCount(url, answerHits):
             for option in answerHits.keys():
                 answerHits[option] = answerHits.get(option, 0) + webtext.count(option)
         else:
-            print(f"Cannot load Webpage, skip. Code: {resp.status_code}")
+            if verbose: print(f"Cannot load Webpage, skip. Code: {resp.status_code}")
             
     except requests.exceptions.ReadTimeout:
-        print('Connection timed out, skip.')
+        if verbose: print('Connection timed out, skip.')
         
     except requests.exceptions.ConnectionError:
-        print('Connection Error, skip.')
+        if verbose: print('Connection Error, skip.')
 
+    #print(answerHits)
     return answerHits
 
 def printOutput(answerHits):
@@ -80,19 +86,26 @@ def assesAnswers(pages, answers):
             answerHits[option] = answerHits.get(option, 0) + page['snippet'].lower().count(option)
     print(answerHits)
     
+    threads = []
     # Crawl Result Webpages for answers
     for page in pages:
-        answerHits = loadPageAndCount(page['url'], answerHits)
+        t = Thread(target=loadPageAndCount, args=(page['url'], answerHits))
+        threads.append(t)
+        t.start()
+        #answerHits = loadPageAndCount(page['url'], answerHits)
         #printOutput(answerHits)
-            
+
+    for t in threads:
+        t.join()
+
     return answerHits
 
-
-#pages = getSearchResults('Welche Art von Tier ist ein "Ungarisches Nackthals"?')
+#st = time.time()
+#pages = getSearchResults('Zu welchem Land gehört Grönland?')
 #print(pages)
 
-#options = assesAnswers(pages, ["frosch", "insekt", "marder", "vogel"])
+#options = assesAnswers(pages, ["dänemark", "norwegen", "kanada", "usa"])
 
 #print(options)
-
+#print(f'Time passed: {time.time() - st}')
 #getKeyPhrases("Wie heißt die jüdische Königin, die ihr Volk durch ihre selbstlosen Handlungen vor der sicheren Zerstörung rettete?")

@@ -1,11 +1,11 @@
 # quizbot
-Beat your firends in quizzes using Azure!
+Beat your firends at Quizduell using Azure!
 
 
-# Issues
-- Image Questions
-- Too long Questions -> Key Phraes
-- Multi word answers
-- remove stopwords and articles in answers
-- make lemmatazation sets of answers and count them together
-- number only answers must match with leading and trailing whitespaces
+# To-Dos
+[ ] Image Questions
+[x] Too long Questions
+[ ] Multi word answers
+[ ] remove stopwords and articles in answers
+[ ] make lemmatization sets of answers and count them together
+[ ] number only answers must match with leading and trailing whitespaces

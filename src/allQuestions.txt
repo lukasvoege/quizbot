@@ -1,0 +1,22 @@
+{'Q': 'Wie heißt der Sänger der Progressive Metal-Band "Tool"?', 'A1': 'Maynard John Keenan', 'A3': 'John Maynard Keynes', 'A2': 'James Maynard Keynes', 'A4': 'Maynard James Keenan'}
+{'Q': 'Kygo mischte 2020 "What\'s Love Got to Do With it" neu ab. Wer sang den Hit im Original?', 'A1': 'Bonnie Tyler', 'A3': 'Whitney Houston', 'A2': 'Chaka Khan', 'A4': 'Tina Turner'}
+{'Q': 'Welche "Dateneinheit" ist die größte?', 'A1': 'Gigabyte', 'A3': 'Megabyte', 'A2': 'Kilobyte', 'A4': 'Terabyte'}
+{'Q': 'In welcher Baumarkt-Abteilung stößt man am ehesten auf Angaben der Einheit "LUX"?', 'A1': 'Lampen', 'A3': 'Bodenbeläge', 'A2': 'Sanitär', 'A4': 'Farben'}
+{'Q': 'Wie heißt die Nachfolgeversion der Programmreihe "Creative Suite" von Adobe?', 'A1': 'ICloud', 'A3': 'Creative Cloud', 'A2': 'Creative World', 'A4': 'Creative Now'}
+{'Q': 'Von welchem Fernsehklassiker zeigte RTL im Sommer 2013 eine Neuauflage?', 'A1': 'Familien-Duell', 'A3': 'Bonanza', 'A2': 'Die 100.000 Mark Show', 'A4': 'Jeopardy!'}
+{'Q': 'Welcher Politiker ist auch als leidenschaftlicher Saxophonist bekannt?', 'A1': 'Jimmy Carter', 'A3': 'Al Gore', 'A2': 'Bill Clinton', 'A4': 'George W. Bush'}
+{'Q': 'Was macht ein Bettenverkäufer in einem Sketch von Monty Python jedes Mal, wenn das Wort "Matratze" fällt?', 'A1': 'Stülpt sich Tüte über Kopf', 'A3': 'Bekommt Schlafanfall', 'A2': 'Jongliert mit Glühbirnen', 'A4': 'Singt "God Save the Queen"'}
+{'Q': 'In welchem Jahr erschien das Album "Chinese Democracy\' von Guns N\' Roses?', 'A1': '2000', 'A3': '1994', 'A2': '1986', 'A4': '2008'}
+{'Q': 'Wie nennt man das Schilddrüsenhormon-Defizit in medizinischer Hinsicht?', 'A1': 'Hämoglobin', 'A3': 'Hypertonie', 'A2': 'Hepatitis', 'A4': 'Hypothyreose'}
+{'Q': 'Wo sitzt der Tibiakopf?', 'A1': 'Oberschenkel', 'A3': 'Unterschenkel', 'A2': 'Unterarm', 'A4': 'Oberarm'}
+{'Q': 'Was ist ein anderes Wort für "Apallisches Syndrom"?', 'A1': 'Wachkoma', 'A3': 'Muskelschwund', 'A2': 'Verfolgungswahn', 'A4': 'Schlaganfall'}
+{'Q': 'In welchem Land befindet sich der mit 300 Metern weltweit höchste Staudamm (Nurek- Staudamm)?', 'A1': 'Tadschikistan', 'A3': 'Vietnam', 'A2': 'Mongolei', 'A4': 'China'}
+{'Q': 'In welcher Stadt wurde 1996 die neue deutsche Rechtschreibung beschlossen?', 'A1': 'Berlin', 'A3': 'Zürich', 'A2': 'Bonn', 'A4': 'Wien'}
+{'Q': 'Wie nannte der israelische Satiriker Ephraim Kishon seine Frau Sara zumeist in seinen Werken?', 'A1': 'Die beste Ehefrau von allen', 'A2': 'Sara', 'A3': 'Meine bessere Hälfte', 'A4': 'Meine Holde'}
+{'Q': 'Wer erhielt den ersten Deutschen Buchpreis für seinen Roman "Es geht uns gut"?', 'A1': 'Daniel Kehlmann', 'A3': 'Sasa StaniSié', 'A2': 'Gila Lustiger', 'A4': 'Arno Geiger'}
+{'Q': 'Märzquiz Was war im letzten Monat los? Endet in 12 Tagen Neues Spiel starten', 'A1': 'Du bist dran o', 'A3': 'elephant.princess Spielen'}
+{'Q': 'Welche US-Serie hat 28 Emmy Awards gewonnen und wurde von 1982 bis 1993 ausgestrahlt?', 'A1': 'Frasier', 'A3': 'Dallas', 'A2': 'Seinfeld', 'A4': 'Cheers'}
+{'Q': 'Was ist eine Besonderheit an der von Heisenberg hergestellten Droge in der Serie "Breaking Bad"?', 'A1': 'Reinheitsgrad von 100%', 'A3': 'Sie ist blau', 'A2': 'Sie macht nicht süchtig', 'A4': 'Sie ist besonders günstig'}
+{'Q': 'Wie ist die Reihenfolge der Hintergrundfarben beim Vorspann zur Tatort-Serie?', 'A1': 'Gelb, Orange, Rot', 'A3': 'Blau, Grün, Rot', 'A2': 'Rot, Blau, Violett', 'A4': 'Violett, Blau, Grün'}
+{'Q': 'Wie heißt Europas kleinster Vogel mit seinem Normalgewicht von nur 5-6 Gramm?', 'A1': 'Blaumeise', 'A3': 'Nachtigall', 'A2': 'Fitis', 'A4': 'Wintergoldhähnchen'}
+{'Q': 'Welche dieser Pflanzen gibt es wirklich?', 'A1': 'Memme', 'A3': 'Miesepeter', 'A2': 'Mimose', 'A4': 'Misanthrop'}
